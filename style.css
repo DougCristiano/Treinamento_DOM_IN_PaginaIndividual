@@ -315,7 +315,7 @@ header a:active {
   line-height: normal;
 }
 
-#feedbacks form {
+#feedbacks .form {
   display: flex;
   flex-direction: column;
   gap: 1vw;
@@ -374,10 +374,39 @@ textarea {
   line-height: 24px;
 }
 
-#feedbacks form div {
+#feedbacks .form div {
   display: flex;
   justify-content: flex-end;
 }
+
+.inicioComentarios {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1vw;
+
+}
+
+.comentarios {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3vw;
+  padding: 1vw;
+  border: 3px solid;
+  border-image: linear-gradient(45deg, #cc0000, #000000) 1;
+  background: lightgrey;
+  animation: animarBorda 0.7s infinite alternate;
+}
+
+.usuario {
+  font-family: Alata;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33.12px;
+  letter-spacing: 0%;
+
+}
+
+
 
 footer nav {
   border: 3px solid;
@@ -413,10 +442,14 @@ footer button {
   color: white;
 }
 
-button:hover,
+button:hover {
+  cursor: pointer;
+  animation: animarBorda 0.7s infinite alternate;
+}
+
 #feedbacks input:hover,
 #feedbacks textarea:hover {
-  cursor: pointer;
+  cursor: text;
   animation: animarBorda 0.7s infinite alternate;
 }
 
@@ -517,7 +550,7 @@ button:hover,
     justify-content: center;
   }
 
-  footer nav > button {
+  footer nav>button {
     order: 1;
     width: 144px;
     height: 40px;
@@ -527,7 +560,7 @@ button:hover,
     align-items: center;
   }
 
-  footer nav > div {
+  footer nav>div {
     order: 2;
   }
 }
@@ -553,7 +586,7 @@ button:hover,
     padding: 1vw 2vw;
   }
 
-  #feedbacks form div {
+  #feedbacks .form div {
     display: flex;
     justify-content: center;
   }
@@ -581,7 +614,7 @@ button:hover,
       font-size: 14px;
     }
 
-    #feedbacks form div {
+    #feedbacks .form div {
       display: flex;
       justify-content: center;
     }
