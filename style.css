@@ -1,0 +1,593 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  width: auto;
+  padding: 28px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 50%;
+  background: black;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: white;
+  font-size: 18px;
+}
+
+header .links {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 16px;
+  gap: 10px;
+}
+
+header span:hover {
+  color: red;
+  cursor: pointer;
+}
+
+header span:active {
+  color: gold;
+}
+
+header a:hover {
+  text-decoration: underline red;
+  cursor: pointer;
+}
+
+header a:active {
+  text-decoration: underline red;
+  color: gold;
+}
+
+.about {
+  border: 3px solid;
+  border-image: linear-gradient(45deg, #cc0000, #000000) 1;
+  display: flex;
+  width: auto;
+  height: 318px;
+  padding: 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 125px;
+  background: lightgrey;
+  color: black;
+}
+
+.about img {
+  width: 247px;
+  height: 247px;
+  border-radius: 247px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+  box-shadow: 4px 4px 4px 0px red;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  width: 614px;
+  height: 134.14px;
+  padding-bottom: 14.14px;
+  justify-content: center;
+  align-items: left;
+}
+
+.tops {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.tops li {
+  display: flex;
+  width: 102px;
+  height: 150px;
+  border-radius: 5px;
+  background: #dfdfdf;
+  border: 3px solid;
+  border-image: linear-gradient(45deg, #cc0000, #000000) 1;
+  color: #000;
+  font-family: Alata;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-items: flex-end;
+  justify-content: center;
+  /* align-content: center; */
+}
+
+.tops li span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+  width: 120px;
+}
+
+.tops h3 {
+  margin: 1vw;
+}
+
+.hobbies .listadesordenada li:first-child {
+  background-image: url(img/praticar\ esporte.webp);
+  width: 102px;
+  height: 150px;
+  text-align: center;
+}
+
+.hobbies .listadesordenada li:nth-child(2) {
+  background-image: url(img/campeonato-gamer-1.jpg);
+  width: 102px;
+  height: 150px;
+  text-align: center;
+}
+
+.hobbies .listadesordenada li:nth-child(3) {
+  background-image: url(img/2016-02-19-netflix-tv-divulgacao.webp);
+  width: 102px;
+  height: 150px;
+  text-align: center;
+}
+
+.hobbies .listadesordenada li:nth-child(4) {
+  background-image: url(img/encontrar\ amigos.jpg);
+  width: 102px;
+  height: 150px;
+  text-align: center;
+}
+
+.hobbies .listadesordenada li:last-child {
+  background-image: url(img/cblol.jpg);
+  width: 102px;
+  height: 150px;
+  text-align: center;
+}
+
+.hobbies {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-end;
+}
+
+.esportes {
+  display: flex;
+  flex-direction: column;
+}
+
+.hobbies .listadesordenada,
+.esportes .listaordenada {
+  display: flex;
+  align-items: bottom;
+  flex-direction: row;
+  gap: 1vw;
+  list-style: none;
+  position: relative;
+}
+
+.hobbies .listadesordenada li,
+.esportes .listaordenada li {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#primeiro div {
+  width: 19px;
+  height: 44px;
+  top: 0;
+  left: 0;
+  border-radius: 0px 0px 3px 3px;
+  background-color: black;
+
+  font-family: Alata;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.08px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  position: absolute;
+
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  color: #ffd700;
+}
+
+#segundo div {
+  width: 19px;
+  height: 44px;
+  top: 0;
+  left: 20%;
+  border-radius: 0px 0px 3px 3px;
+  background-color: black;
+
+  font-family: Alata;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.08px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  position: absolute;
+
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  color: #c0c0c0;
+}
+
+#terceiro div {
+  width: 19px;
+  height: 44px;
+  top: 0;
+  left: 41%;
+  border-radius: 0px 0px 3px 3px;
+  background-color: black;
+
+  font-family: Alata;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.08px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  position: absolute;
+
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  color: #ce8946;
+}
+
+.esportes .listaordenada li:first-child {
+  background-image: url(img/futebol.jpg);
+  width: 102px;
+  height: 150px;
+  text-align: center;
+}
+
+.esportes .listaordenada li:nth-child(2) {
+  background-image: url(img/Volei-CBV-SuperligaMasculinadeVolei-SuperligaFemininadeVolei-1.png);
+  width: 102px;
+  height: 150px;
+  text-align: center;
+}
+
+.esportes .listaordenada li:nth-child(3) {
+  background-image: url(img/ESCOLA-GUGA-@-Tennis-foto-Caio-Graca-185-1.webp);
+  width: 102px;
+  height: 150px;
+  text-align: center;
+}
+
+.esportes .listaordenada li:nth-child(4) {
+  background-image: url(img/beach-tennis.webp);
+  width: 102px;
+  height: 150px;
+  text-align: center;
+}
+
+.esportes .listaordenada li:last-child {
+  background-image: url(img/mao-posicionando-peteca-em-uma-raquete-de-badminton.webp);
+  width: 102px;
+  height: 150px;
+  text-align: center;
+}
+
+#feedbacks {
+  margin-inline: 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 1vw 15vw;
+  gap: 1vw;
+}
+
+#feedbacks h3 {
+  color: #000;
+  font-family: Alata;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#feedbacks form {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+#feedbacks input,
+textarea {
+  border: 4px solid;
+  border-image: linear-gradient(45deg, #cc0000, #000000) 1;
+  height: 56px;
+  border-radius: 4px;
+  background: #ececec;
+  padding-left: 1%;
+  color: #454444;
+  font-family: Alata;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#feedbacks textarea {
+  padding-top: 1.5%;
+}
+
+#feedbacks textarea::placeholder {
+  color: #454444;
+  font-family: Alata;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#feedbacks input::placeholder {
+  color: #454444;
+  font-family: Alata;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#feedbacks button {
+  width: 127px;
+  height: 37px;
+  border: 3px solid;
+  border-image: linear-gradient(45deg, #cc0000, #000000) 1;
+  background: black;
+  color: white;
+  text-align: center;
+  font-family: Alata;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#feedbacks form div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer nav {
+  border: 3px solid;
+  border-image: linear-gradient(45deg, #cc0000, #000000) 1;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 70%;
+  background: whitesmoke;
+}
+
+footer div {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+footer button {
+  font-family: Alata;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  padding: 8px 16px;
+  gap: 10%;
+  border: 3px solid;
+  border-image: linear-gradient(45deg, #cc0000, #000000) 1;
+  background: black;
+  color: white;
+}
+
+button:hover,
+#feedbacks input:hover,
+#feedbacks textarea:hover {
+  cursor: pointer;
+  animation: animarBorda 0.7s infinite alternate;
+}
+
+@keyframes animarBorda {
+  0% {
+    border-image: linear-gradient(45deg, #cc0000, #000000) 1;
+  }
+
+  100% {
+    border-image: linear-gradient(45deg, #000000, #cc0000) 1;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    padding: 20px 15px;
+    gap: 20%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  header .links {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .about {
+    height: auto;
+    padding: 20px;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .about img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .texto {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .tops {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .tops li {
+    width: calc(33.33% - 20px);
+    min-width: 102px;
+  }
+
+  .hobbies {
+    align-items: flex-start;
+  }
+
+  .hobbies .listadesordenada,
+  .esportes .listaordenada {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  #primeiro div,
+  #segundo div,
+  #terceiro div {
+    position: relative;
+    left: auto;
+    margin: 0;
+  }
+
+  #feedbacks {
+    margin-inline: 5vw;
+    padding: 1vw 5vw;
+  }
+
+  #feedbacks h3 {
+    text-align: left;
+  }
+
+  #feedbacks button {
+    width: 79.08px;
+    height: 37px;
+  }
+
+  footer nav {
+    padding: 16px;
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer nav > button {
+    order: 1;
+    width: 144px;
+    height: 40px;
+    font-size: 13.3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer nav > div {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .tops li {
+    width: calc(50% - 20px);
+  }
+
+  .about img {
+    width: 150px;
+    height: 150px;
+  }
+
+  #feedbacks {
+    margin-inline: 2vw;
+    padding: 1vw 2vw;
+  }
+
+  #feedbacks form div {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 480px) {
+    header {
+      font-size: 16px;
+    }
+
+    .tops li {
+      width: 100%;
+    }
+
+    .tops li span {
+      width: 100%;
+    }
+
+    .hobbies .listadesordenada li,
+    .esportes .listaordenada li {
+      width: 100%;
+    }
+
+    #feedbacks input,
+    #feedbacks textarea {
+      font-size: 14px;
+    }
+
+    #feedbacks form div {
+      display: flex;
+      justify-content: center;
+    }
+
+    footer nav {
+      padding: 10px;
+    }
+  }
+}
